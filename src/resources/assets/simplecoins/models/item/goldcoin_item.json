@@ -1,0 +1,6 @@
+{
+    "parent":"simplecoins:item/standard_item",
+    "textures": {
+        "layer0":"simplecoins:items/goldcoin_item"
+    }
+}

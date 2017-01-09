@@ -1,0 +1,4 @@
+< en_US.lang - English localization file for the mod Simple Coins >
+item.ironcoin_Item.name=Iron Coin
+item.goldcoin_Item.name=Gold Coin
+tile.mint_block.name=Mint

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+    	"particle" : "simplecoins:blocks/mint_block_sides",
+        "north": "simplecoins:blocks/mint_block_sides",
+        "south": "simplecoins:blocks/mint_block_sides",
+        "west": "simplecoins:blocks/mint_block_sides",
+        "east": "simplecoins:blocks/mint_block_sides",
+        "down":  "simplecoins:blocks/mint_block_verts",
+        "up": "simplecoins:blocks/mint_block_verts"
+    }
+}
