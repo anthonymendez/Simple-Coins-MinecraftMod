@@ -1,6 +1,10 @@
 package com.TonyTiger.simplecoins.TileEntity;
 
+import com.TonyTiger.simplecoins.guicontainer.ContainerMintTileEntity;
+import com.TonyTiger.simplecoins.items.ModItems;
+
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -14,11 +18,13 @@ import net.minecraft.util.text.TextComponentTranslation;
 
 public class MintTileEntity extends TileEntity implements ITickable, IInventory {
     
-    private NonNullList<ItemStack> inventory;
+    private NonNullList<ItemStack> inventory = NonNullList.create();
     private String customName = "";
 
     public MintTileEntity(){
-    	inventory = NonNullList.create();
+    	inventory.add(ItemStack.EMPTY);
+    	inventory.add(ItemStack.EMPTY);
+    	this.markDirty();
     }
     
     @Override
@@ -39,7 +45,7 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
         if (this.hasCustomName()) {
             nbt.setString("CustomName", this.getCustomName());
         }
-        
+        this.markDirty();
         return nbt;
     }
 
@@ -62,12 +68,18 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
     
     @Override
     public NBTTagCompound getUpdateTag(){
-    
         return writeToNBT(new NBTTagCompound());
     }
 	
 	@Override
 	public void update() {
+		if(this.getStackInSlot(0).getItem().equals(Items.IRON_INGOT)){
+			this.setInventorySlotContents
+				(1, new ItemStack(ModItems.IRONCOIN,4));
+		}else if(this.getStackInSlot(0).getItem().equals(Items.GOLD_INGOT)){
+			this.setInventorySlotContents
+				(1, new ItemStack(ModItems.GOLDCOIN,4));
+		}
 		
 	}
 	
@@ -102,7 +114,8 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 	}
 
 	@Override
-	public void closeInventory(EntityPlayer arg0){}
+	public void closeInventory(EntityPlayer player){
+	}
 
 	@Override
 	public ItemStack decrStackSize(int index, int count) {
@@ -154,23 +167,25 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 
 	@Override
 	public ItemStack getStackInSlot(int index) {
-		if (index < 0 || index >= this.inventory.size())
-	        return ItemStack.EMPTY;
-		else return this.inventory.get(index);
+		return this.inventory.get(index);
 	}
 
 	@Override
 	public boolean isEmpty() {
 		for(ItemStack is : inventory){
-			if(ItemStack.areItemStacksEqual(is,ItemStack.EMPTY) && is.getCount() == 0)
+			if(is.isEmpty() && is.getCount() == 0)
 				return true;
 		}
 		return false;
 	}
 
 	@Override
-	public boolean isItemValidForSlot(int arg0, ItemStack arg1) {
-		return true;
+	public boolean isItemValidForSlot(int inint, ItemStack is) {
+		if(((ItemStack.areItemsEqual(new ItemStack(Items.IRON_INGOT,1), is) 
+		|| ItemStack.areItemsEqual(new ItemStack(Items.GOLD_INGOT,1), is))
+				&& inint == 0) || inint != 1)
+			return true;
+		return false;
 	}
 
 	@Override
@@ -187,22 +202,23 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 	public ItemStack removeStackFromSlot(int index){
 		ItemStack stack = this.getStackInSlot(index);
 	    this.setInventorySlotContents(index, ItemStack.EMPTY);
+	    System.out.println(stack.getDisplayName());
 	    return stack;
 	}
 
 	@Override
 	public void setField(int arg0, int arg1) {	
 	}
-
+	
+	//CALL THIS! DONT CALL INVENTORY.SET SINCE THIS ALREADY DOES IT!
 	@Override
 	public void setInventorySlotContents(int index, ItemStack stack) {
-		if (index < 0 || index >= this.getSizeInventory())
+		if (index < 0 || index >= this.getSizeInventory())			
 	        return;
-
-	    if (ItemStack.areItemStacksEqual(stack,ItemStack.EMPTY) && stack.getCount() > this.getInventoryStackLimit())
+	    if (stack.isEmpty() && stack.getCount() > this.getInventoryStackLimit())
 	        stack.setCount(this.getInventoryStackLimit());
 	        
-	    if (ItemStack.areItemStacksEqual(stack,ItemStack.EMPTY) && stack.getCount() == 0)
+	    if (stack.isEmpty() && stack.getCount() == 0)
 	        stack = ItemStack.EMPTY;
 
 	    this.inventory.set(index, stack);

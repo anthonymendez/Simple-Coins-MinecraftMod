@@ -1,9 +1,9 @@
 package com.TonyTiger.simplecoins.guicontainer;
 
 import com.TonyTiger.simplecoins.TileEntity.MintTileEntity;
-import com.TonyTiger.simplecoins.client.gui.GuiMintTileEntity;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
@@ -42,7 +42,7 @@ public class ContainerMintTileEntity extends Container {
 		//Tile slot output
 		this.addSlotToContainer(new Slot(te,1,106,7));
 		
-		// Player Inventory, Slot 9-35, Slot IDs 2  - 28
+		// Player Inventory, Slot 9-35, Slot IDs 9  - 35
 	    for (int y = 0; y < 3; ++y) {
 	        for (int x = 0; x < 9; ++x) {
 	            if(y == 0)
@@ -74,13 +74,13 @@ public class ContainerMintTileEntity extends Container {
 	        ItemStack current = slot.getStack();
 	        previous = current.copy();
 
-	        if (fromSlot < 2) {
+	        if (fromSlot < 9) {
 	            // From TE Inventory to Player Inventory
-	            if (!this.mergeItemStack(current, 2, 37, true))
+	            if (!this.mergeItemStack(current, 9, 37, true))
 	                return ItemStack.EMPTY;
 	        }else{
 	            // From Player Inventory to TE Inventory
-	            if (!this.mergeItemStack(current, 0, 1, false))
+	            if (!this.mergeItemStack(current, 0, 9, false))
 	                return ItemStack.EMPTY;
 	        }
 	        
@@ -93,7 +93,7 @@ public class ContainerMintTileEntity extends Container {
 	            return ItemStack.EMPTY;
 	        slot.onTake(playerIn, current);
 	    }
+	    te.markDirty();
 	    return previous;
 	}
-	
 }

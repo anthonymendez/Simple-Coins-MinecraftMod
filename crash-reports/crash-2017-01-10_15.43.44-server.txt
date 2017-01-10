@@ -1,0 +1,99 @@
+---- Minecraft Crash Report ----
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 1/10/17 3:43 PM
+Description: Ticking player
+
+java.lang.IndexOutOfBoundsException: Index: 37, Size: 37
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at net.minecraft.util.NonNullList.get(SourceFile:40)
+	at net.minecraft.inventory.Container.detectAndSendChanges(Container.java:76)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdate(EntityPlayerMP.java:280)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1961)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:840)
+	at net.minecraft.world.World.updateEntity(World.java:1931)
+	at net.minecraft.world.WorldServer.tickPlayers(WorldServer.java:650)
+	at net.minecraft.world.World.updateEntities(World.java:1723)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:621)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:720)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at net.minecraft.util.NonNullList.get(SourceFile:40)
+	at net.minecraft.inventory.Container.detectAndSendChanges(Container.java:76)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdate(EntityPlayerMP.java:280)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1961)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:840)
+	at net.minecraft.world.World.updateEntity(World.java:1931)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 47
+	Entity Name: Tony_De_Tiger
+	Entity's Exact location: 1952.54, 4.00, 1305.23
+	Entity's Block location: World: (1952,4,1305), Chunk: (at 0,0,9 in 122,81; contains blocks 1952,0,1296 to 1967,255,1311), Region: (3,2; contains chunks 96,64 to 127,95, blocks 1536,0,1024 to 2047,255,1535)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.WorldServer.tickPlayers(WorldServer.java:650)
+	at net.minecraft.world.World.updateEntities(World.java:1723)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:621)
+
+-- Affected level --
+Details:
+	Level name: Copy of Copy of Copy of Copy of
+	All players: 1 total; [EntityPlayerMP['Tony_De_Tiger'/47, l='Copy of Copy of Copy of Copy of', x=1952.54, y=4.00, z=1305.23]]
+	Chunk stats: ServerChunkCache: 256 Drop: 0
+	Level seed: 8271065765596676577
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (1963,4,1310), Chunk: (at 11,0,14 in 122,81; contains blocks 1952,0,1296 to 1967,255,1311), Region: (3,2; contains chunks 96,64 to 127,95, blocks 1536,0,1024 to 2047,255,1535)
+	Level time: 97956 game time, 5740 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 74377 (now: false), thunder time: 52033 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:720)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_111, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 286294152 bytes (273 MB) / 543686656 bytes (518 MB) up to 928514048 bytes (885 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.38 Powered by Forge 13.20.0.2205 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeBin-1.11.2-13.20.0.2205.jar) 
+	UCHIJAAAA	forge{13.20.0.2205} [Minecraft Forge] (forgeBin-1.11.2-13.20.0.2205.jar) 
+	UCHIJAAAA	simplecoins{0.2.0} [Simple Coins mod] (bin) 
+	UCHIJAAAA	examplemod{1.0} [Example Mod] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Tony_De_Tiger'/47, l='Copy of Copy of Copy of Copy of', x=1952.54, y=4.00, z=1305.23]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
