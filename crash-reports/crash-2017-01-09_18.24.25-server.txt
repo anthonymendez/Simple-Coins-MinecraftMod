@@ -1,0 +1,77 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 1/9/17 6:24 PM
+Description: Exception ticking world
+
+java.lang.NullPointerException: Exception ticking world
+	at com.TonyTiger.simplecoins.TileEntity.MintTileEntity.writeToNBT(MintTileEntity.java:32)
+	at com.TonyTiger.simplecoins.TileEntity.MintTileEntity.getUpdateTag(MintTileEntity.java:65)
+	at net.minecraft.network.play.server.SPacketChunkData.<init>(SourceFile:52)
+	at net.minecraft.server.management.PlayerChunkMapEntry.sendToPlayers(PlayerChunkMapEntry.java:156)
+	at net.minecraft.server.management.PlayerChunkMap.tick(SourceFile:165)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:221)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:709)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.TonyTiger.simplecoins.TileEntity.MintTileEntity.writeToNBT(MintTileEntity.java:32)
+	at com.TonyTiger.simplecoins.TileEntity.MintTileEntity.getUpdateTag(MintTileEntity.java:65)
+	at net.minecraft.network.play.server.SPacketChunkData.<init>(SourceFile:52)
+	at net.minecraft.server.management.PlayerChunkMapEntry.sendToPlayers(PlayerChunkMapEntry.java:156)
+	at net.minecraft.server.management.PlayerChunkMap.tick(SourceFile:165)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:221)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Tony_De_Tiger'/24, l='New World', x=-150.50, y=4.00, z=858.50]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 4065143544568251499
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-142,4,865), Chunk: (at 2,0,1 in -9,54; contains blocks -144,0,864 to -129,255,879), Region: (-1,1; contains chunks -32,32 to -1,63, blocks -512,0,512 to -1,255,1023)
+	Level time: 1115 game time, 1115 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 158982 (now: false), thunder time: 42417 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:709)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_111, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 160018248 bytes (152 MB) / 517472256 bytes (493 MB) up to 928514048 bytes (885 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.38 Powered by Forge 13.20.0.2205 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	minecraft{1.11.2} [Minecraft] (minecraft.jar) 
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeBin-1.11.2-13.20.0.2205.jar) 
+	UCHIJAAAA	forge{13.20.0.2205} [Minecraft Forge] (forgeBin-1.11.2-13.20.0.2205.jar) 
+	UCHIJAAAA	simplecoins{0.2.0} [Simple Coins mod] (bin) 
+	UCHIJAAAA	examplemod{1.0} [Example Mod] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Tony_De_Tiger'/24, l='New World', x=-150.50, y=4.00, z=858.50]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
