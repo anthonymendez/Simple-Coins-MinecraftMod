@@ -7,6 +7,6 @@
   "logoFile": "assets/simplecoins/textures/logo.png",
   "url": "minecraftforge.net/",
   "updateJSON": "minecraftforge.net/versions.json",
-  "authorList": ["Anthony Mendez"],
-  "credits": "I'd like to thank my mother and father."
+  "authorList": ["Tony The Tiger"],
+  "credits": "Modmakers who put their code on GitHub, you guys are real OGs."
 }]
