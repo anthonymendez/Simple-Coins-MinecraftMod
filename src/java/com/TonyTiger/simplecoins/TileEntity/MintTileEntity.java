@@ -1,10 +1,10 @@
 package com.TonyTiger.simplecoins.TileEntity;
 
-import com.TonyTiger.simplecoins.guicontainer.ContainerMintTileEntity;
 import com.TonyTiger.simplecoins.items.ModItems;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -180,10 +180,10 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 	}
 
 	@Override
-	public boolean isItemValidForSlot(int inint, ItemStack is) {
+	public boolean isItemValidForSlot(int slotId, ItemStack is) {
 		if(((ItemStack.areItemsEqual(new ItemStack(Items.IRON_INGOT,1), is) 
 		|| ItemStack.areItemsEqual(new ItemStack(Items.GOLD_INGOT,1), is))
-				&& inint == 0) || inint != 1)
+				&& slotId == 0) || slotId != 1)
 			return true;
 		return false;
 	}
@@ -224,5 +224,7 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 	    this.inventory.set(index, stack);
 	    this.markDirty();
 	}
+	
+	
 
 }

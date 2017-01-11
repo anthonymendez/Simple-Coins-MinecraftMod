@@ -1,11 +1,15 @@
 package com.TonyTiger.simplecoins.guicontainer;
 
 import com.TonyTiger.simplecoins.TileEntity.MintTileEntity;
+import com.TonyTiger.simplecoins.items.ModItems;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryCrafting;
+import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
@@ -34,7 +38,6 @@ public class ContainerMintTileEntity extends Container {
 		te = inte;
 		worldObj = inte.getWorld();
 		pos = inte.getPos();
-		
 		
 		//Tile slot input
 		this.addSlotToContainer(new Slot(te,0,53,7));
@@ -95,5 +98,46 @@ public class ContainerMintTileEntity extends Container {
 	    }
 	    te.markDirty();
 	    return previous;
+	}
+	
+	@Override
+	public ItemStack slotClick(int slotId, int dragType, 
+			ClickType clickTypeIn,EntityPlayer player) {
+		if(slotId == 0 || slotId == 1){
+		Slot slot = this.inventorySlots.get(slotId);
+		ItemStack is = slot.getStack();
+			if( (ItemStack.areItemsEqual(new ItemStack(ModItems.IRONCOIN,4), is)
+			  || ItemStack.areItemsEqual(new ItemStack(ModItems.GOLDCOIN,4), is))
+			  && slotId == 1 && 
+			  	 ItemStack.areItemStacksEqual(player.inventory.getItemStack(),ItemStack.EMPTY)
+			  && !ItemStack.areItemStacksEqual(is,ItemStack.EMPTY)
+			  ){
+				slot.putStack(player.inventory.getItemStack());
+				this.te.removeStackFromSlot(1);
+				ItemStack slot0 = te.getStackInSlot(0);
+				if(slot0.getCount() > 1)
+					slot0.setCount(slot0.getCount()-1);
+				else
+					this.te.removeStackFromSlot(0);
+				if(player.inventory.getItemStack().equals(ItemStack.EMPTY))
+					player.inventory.setItemStack(is);
+				else
+					player.inventory.getItemStack().setCount(player.inventory.getItemStack().getCount()+4);
+				return is;
+			}else if(slotId == 0){
+				slot.putStack(player.inventory.getItemStack());
+				player.inventory.setItemStack(is);
+				if(te.getStackInSlot(1).getItem().equals(ModItems.IRONCOIN)
+				|| te.getStackInSlot(1).getItem().equals(ModItems.GOLDCOIN))
+					te.removeStackFromSlot(1);
+				return is;
+			}
+		}
+        return super.slotClick(slotId, dragType, clickTypeIn, player);
+    }
+	
+	@Override
+	public void putStackInSlot(int slotID, ItemStack stack) {
+		super.putStackInSlot(slotID, stack);
 	}
 }
