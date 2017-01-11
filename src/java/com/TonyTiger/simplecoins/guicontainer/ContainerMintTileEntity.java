@@ -26,7 +26,7 @@ public class ContainerMintTileEntity extends Container {
 	 * 
 	 * Input 0 ........ 0
 	 * Output 1 ........ 1
-	 * Player Inventory 9-35 .. 2  - 28
+	 * Player Inventory 9-35 .. 9  - 35
 	 * Player Inventory 0-8 ... 29 - 37
 	 */
 	
@@ -73,17 +73,17 @@ public class ContainerMintTileEntity extends Container {
 	    ItemStack previous = ItemStack.EMPTY;
 	    Slot slot = (Slot) this.inventorySlots.get(fromSlot);
 	    
-	    if (slot.equals(null) && slot.getHasStack()) {
+	    if (slot != null && slot.getHasStack()) {
 	        ItemStack current = slot.getStack();
 	        previous = current.copy();
 
-	        if (fromSlot < 9) {
+	        if (fromSlot < 2) {
 	            // From TE Inventory to Player Inventory
 	            if (!this.mergeItemStack(current, 9, 37, true))
 	                return ItemStack.EMPTY;
 	        }else{
 	            // From Player Inventory to TE Inventory
-	            if (!this.mergeItemStack(current, 0, 9, false))
+	            if (!this.mergeItemStack(current, 0, 1, false))
 	                return ItemStack.EMPTY;
 	        }
 	        
@@ -102,39 +102,32 @@ public class ContainerMintTileEntity extends Container {
 	
 	@Override
 	public ItemStack slotClick(int slotId, int dragType, 
-			ClickType clickTypeIn,EntityPlayer player) {
-		if(slotId == 0 || slotId == 1){
-		Slot slot = this.inventorySlots.get(slotId);
-		ItemStack is = slot.getStack();
-			if( (ItemStack.areItemsEqual(new ItemStack(ModItems.IRONCOIN,4), is)
-			  || ItemStack.areItemsEqual(new ItemStack(ModItems.GOLDCOIN,4), is))
-			  && slotId == 1 && 
-			  	 ItemStack.areItemStacksEqual(player.inventory.getItemStack(),ItemStack.EMPTY)
-			  && !ItemStack.areItemStacksEqual(is,ItemStack.EMPTY)
-			  ){
-				slot.putStack(player.inventory.getItemStack());
-				this.te.removeStackFromSlot(1);
-				ItemStack slot0 = te.getStackInSlot(0);
-				if(slot0.getCount() > 1)
-					slot0.setCount(slot0.getCount()-1);
-				else
-					this.te.removeStackFromSlot(0);
-				if(player.inventory.getItemStack().equals(ItemStack.EMPTY))
-					player.inventory.setItemStack(is);
-				else
-					player.inventory.getItemStack().setCount(player.inventory.getItemStack().getCount()+4);
-				return is;
-			}else if(slotId == 0){
-				slot.putStack(player.inventory.getItemStack());
-				player.inventory.setItemStack(is);
-				if(te.getStackInSlot(1).getItem().equals(ModItems.IRONCOIN)
-				|| te.getStackInSlot(1).getItem().equals(ModItems.GOLDCOIN))
-					te.removeStackFromSlot(1);
-				return is;
-			}
-		}
-        return super.slotClick(slotId, dragType, clickTypeIn, player);
+			ClickType clickTypeIn,EntityPlayer player){			
+		ItemStack clickItemStack = super.slotClick(slotId, dragType, 
+	              clickTypeIn, player);
+		System.out.println(clickItemStack.getDisplayName());
+	    te.markDirty();
+	    return clickItemStack;
+	}
+	
+	@Override
+    public void onContainerClosed(EntityPlayer parPlayer)
+    {
+        if(!ItemStack.areItemStacksEqual(parPlayer.inventory.getItemStack(),ItemStack.EMPTY)){
+            parPlayer.entityDropItem(parPlayer.inventory.getItemStack(), 0.5f);
+        }
+        if(!worldObj.isRemote){
+            ItemStack itemStack = inventoryItemStacks.get(0);
+            if(!ItemStack.areItemStacksEqual(ItemStack.EMPTY, itemStack)){
+                parPlayer.entityDropItem(itemStack, 0.5f);
+            }
+            itemStack = inventoryItemStacks.get(1);
+            if(!ItemStack.areItemStacksEqual(ItemStack.EMPTY, itemStack)){
+                parPlayer.entityDropItem(itemStack, 0.5f);
+            }
+        }
     }
+
 	
 	@Override
 	public void putStackInSlot(int slotID, ItemStack stack) {
