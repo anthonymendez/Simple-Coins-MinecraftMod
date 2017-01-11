@@ -73,13 +73,6 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 	
 	@Override
 	public void update() {
-		if(this.getStackInSlot(0).getItem().equals(Items.IRON_INGOT)){
-			this.setInventorySlotContents
-				(1, new ItemStack(ModItems.IRONCOIN,4));
-		}else if(this.getStackInSlot(0).getItem().equals(Items.GOLD_INGOT)){
-			this.setInventorySlotContents
-				(1, new ItemStack(ModItems.GOLDCOIN,4));
-		}
 		
 	}
 	

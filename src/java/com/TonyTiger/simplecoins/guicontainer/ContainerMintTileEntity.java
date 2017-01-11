@@ -4,12 +4,12 @@ import com.TonyTiger.simplecoins.TileEntity.MintTileEntity;
 import com.TonyTiger.simplecoins.items.ModItems;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryCraftResult;
 import net.minecraft.inventory.InventoryCrafting;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
@@ -18,9 +18,11 @@ import net.minecraft.world.World;
 public class ContainerMintTileEntity extends Container {
 	
 	private MintTileEntity te;
+	public IInventory CraftResult;
+	public InventoryCrafting inputInventory = new InventoryCrafting(this,1,1);
+//	public InventoryCrafting outputInventory = new InventoryCrafting(this,1,1);
 	protected World worldObj;
 	protected BlockPos pos;
-	
 	/*
 	 * SLOTS:
 	 * 
@@ -38,12 +40,14 @@ public class ContainerMintTileEntity extends Container {
 		te = inte;
 		worldObj = inte.getWorld();
 		pos = inte.getPos();
-		
+		CraftResult = new InventoryCraftResult();
+		inputInventory.setInventorySlotContents(0, ItemStack.EMPTY);
+//		outputInventory.setInventorySlotContents(0, this.inventoryItemStacks.get(1));
 		//Tile slot input
-		this.addSlotToContainer(new Slot(te,0,53,7));
+		this.addSlotToContainer(new Slot(inputInventory,0,53,7));
 		
 		//Tile slot output
-		this.addSlotToContainer(new Slot(te,1,106,7));
+		this.addSlotToContainer(new Slot(CraftResult,0,106,7));
 		
 		// Player Inventory, Slot 9-35, Slot IDs 9  - 35
 	    for (int y = 0; y < 3; ++y) {
@@ -102,17 +106,35 @@ public class ContainerMintTileEntity extends Container {
 	
 	@Override
 	public ItemStack slotClick(int slotId, int dragType, 
-			ClickType clickTypeIn,EntityPlayer player){			
-		ItemStack clickItemStack = super.slotClick(slotId, dragType, 
-	              clickTypeIn, player);
-		System.out.println(clickItemStack.getDisplayName());
-	    te.markDirty();
-	    return clickItemStack;
+			ClickType clickTypeIn,EntityPlayer player){
+		
+		ItemStack clickItemStack = super.slotClick(slotId, dragType, clickTypeIn, player);
+		if(slotId != 1 || !clickItemStack.isItemEqual(new ItemStack(ModItems.GOLDCOIN,4)) || !clickItemStack.isItemEqual(new ItemStack(ModItems.IRONCOIN,4)))
+			onCraftMatrixChanged(inputInventory);
+		else{
+			if(CraftResult.getStackInSlot(0).isItemEqual(new ItemStack(ModItems.GOLDCOIN,1))
+				|| CraftResult.getStackInSlot(0).isItemEqual(new ItemStack(ModItems.IRONCOIN,1))){
+				CraftResult.setInventorySlotContents(0, ItemStack.EMPTY);
+				inputInventory.getStackInSlot(0).setCount(inputInventory.getStackInSlot(0).getCount()-1);
+				this.inventoryItemStacks.get(0).setCount(this.inventoryItemStacks.get(0).getCount()-1);
+			}
+			onCraftMatrixChanged(inputInventory);
+		}return clickItemStack;
 	}
 	
 	@Override
-    public void onContainerClosed(EntityPlayer parPlayer)
-    {
+	public void onCraftMatrixChanged(IInventory parInventory){
+		if(ItemStack.areItemsEqual(parInventory.getStackInSlot(0),new ItemStack(Items.IRON_INGOT)))
+			CraftResult.setInventorySlotContents(0, new ItemStack((ModItems.IRONCOIN),4));
+		else if(ItemStack.areItemsEqual(parInventory.getStackInSlot(0),new ItemStack(Items.GOLD_INGOT)))
+			CraftResult.setInventorySlotContents(0, new ItemStack((ModItems.GOLDCOIN),4));
+		else
+			CraftResult.setInventorySlotContents(0, ItemStack.EMPTY);
+	}		
+
+	
+	@Override
+    public void onContainerClosed(EntityPlayer parPlayer){
         if(!ItemStack.areItemStacksEqual(parPlayer.inventory.getItemStack(),ItemStack.EMPTY)){
             parPlayer.entityDropItem(parPlayer.inventory.getItemStack(), 0.5f);
         }
