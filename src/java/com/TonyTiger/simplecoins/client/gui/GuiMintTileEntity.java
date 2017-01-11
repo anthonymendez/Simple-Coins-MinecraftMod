@@ -7,16 +7,17 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
 
 public class GuiMintTileEntity extends GuiContainer{
 	
-	private IInventory playerInv;
+	private InventoryPlayer playerInv;
 	private MintTileEntity te;
 	public static double decreaseBy = 2;
 	
-	public GuiMintTileEntity(IInventory playerInv, MintTileEntity te){
+	public GuiMintTileEntity(InventoryPlayer playerInv, MintTileEntity te){
 		super(new ContainerMintTileEntity(playerInv,te));
 		this.te = te;
 		this.playerInv = playerInv;

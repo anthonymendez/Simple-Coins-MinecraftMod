@@ -174,11 +174,7 @@ public class MintTileEntity extends TileEntity implements ITickable, IInventory 
 
 	@Override
 	public boolean isItemValidForSlot(int slotId, ItemStack is) {
-		if(((ItemStack.areItemsEqual(new ItemStack(Items.IRON_INGOT,1), is) 
-		|| ItemStack.areItemsEqual(new ItemStack(Items.GOLD_INGOT,1), is))
-				&& slotId == 0) || slotId != 1)
-			return true;
-		return false;
+		return true;
 	}
 
 	@Override
