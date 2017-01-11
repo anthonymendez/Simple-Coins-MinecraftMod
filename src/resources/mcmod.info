@@ -2,11 +2,11 @@
   "modid": "simplecoins",
   "name": "Simple Coins",
   "description": "Creates a simple currency to enhance the 'Vanilla' trading experience.",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "mcversion": "1.11.2",
   "logoFile": "assets/simplecoins/textures/logo.png",
   "url": "minecraftforge.net/",
   "updateJSON": "minecraftforge.net/versions.json",
   "authorList": ["Anthony Mendez"],
-  "credits": "I'd like to thank my mother and father.",
+  "credits": "I'd like to thank my mother and father."
 }]
