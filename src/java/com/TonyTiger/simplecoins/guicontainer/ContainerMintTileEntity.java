@@ -7,6 +7,7 @@ import com.TonyTiger.simplecoins.items.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryCrafting;
@@ -20,10 +21,8 @@ import net.minecraft.world.World;
 public class ContainerMintTileEntity extends Container {
 	
 	private MintTileEntity te;
-	private int itemsCrafted;
-	private boolean isRetrying = false;
-	public IInventory CraftResult;
-	public InventoryCrafting inputInventory = new InventoryCrafting(this,1,1);
+	private IInventory CraftResult;
+	private InventoryCrafting inputInventory = new InventoryCrafting(this,1,1);
 	protected World worldObj;
 	protected BlockPos pos;
 	/*
@@ -45,11 +44,7 @@ public class ContainerMintTileEntity extends Container {
 		pos = inte.getPos();
 		CraftResult = new MintCraftResult();
 		inputInventory.setInventorySlotContents(0, ItemStack.EMPTY);
-//		outputInventory.setInventorySlotContents(0, this.inventoryItemStacks.get(1));
-		//Tile slot input
 		this.addSlotToContainer(new Slot(inputInventory,0,53,7));
-		
-		//Tile slot output
 		this.addSlotToContainer(new SlotCrafting(playerInv.player,inputInventory,CraftResult,1,106,7));
 		
 		// Player Inventory, Slot 9-35, Slot IDs 9  - 35
@@ -74,39 +69,6 @@ public class ContainerMintTileEntity extends Container {
 	public boolean canInteractWith(EntityPlayer playerIn) {
 		return te.isUsableByPlayer(playerIn);
 	}
-	
-//	@Override
-//	public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
-//	    ItemStack previous = ItemStack.EMPTY;
-//	    Slot slot = (Slot) this.inventorySlots.get(fromSlot);
-//	    
-//	    if (slot != null && slot.getHasStack()) {
-//	        ItemStack current = slot.getStack();
-//	        previous = current.copy();
-//
-//	        if (fromSlot < 2) {
-//	            // From TE Inventory to Player Inventory
-//	            if (!this.mergeItemStack(current, 9, 37, true))
-//	                return ItemStack.EMPTY;
-//	        }else{
-//	            // From Player Inventory to TE Inventory
-//	            if (!this.mergeItemStack(current, 0, 1, false))
-//	                return ItemStack.EMPTY;
-//	        }
-//	        
-//	        if (current.getCount() == 0)
-//	            slot.putStack(ItemStack.EMPTY);
-//	        else
-//	            slot.onSlotChanged();
-//
-//	        if (current.getCount() == previous.getCount())
-//	            return ItemStack.EMPTY;
-//	        slot.onTake(playerIn, current);
-//	    }
-//	    te.markDirty();
-//	    return previous;
-//	}
-//	
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
 		Slot slot = (Slot) inventorySlots.get(fromSlot);
@@ -157,35 +119,24 @@ public class ContainerMintTileEntity extends Container {
         }
         return ItemStack.EMPTY;
 	}
-//	
-//	@Override
-//	public ItemStack slotClick(int slotId, int dragType, 
-//			ClickType clickTypeIn,EntityPlayer player){
-//		ItemStack clickItemStack = super.slotClick(slotId, dragType, clickTypeIn, player);
-//		if(slotId == 1 && this.inventoryItemStacks.get(0).getCount() > 1)
-//			this.inventoryItemStacks.get(0).setCount(this.inventoryItemStacks.get(0).getCount()-1);
-//			onCraftMatrixChanged(inputInventory);
-//		return clickItemStack;
-//	}
-//	
-//	@Override
-//    protected void retrySlotClick(int slot, int dragType, boolean p_75133_3_, EntityPlayer player) {
-//        ItemStack stackInSlot = ((Slot) inventorySlots.get(slot)).getStack();
-//        itemsCrafted += stackInSlot.getCount();
-//        isRetrying = true;
-//        if (slot != 0 || !isLastCraftingOperation() && itemsCrafted < stackInSlot.getMaxStackSize()) {
-//            this.slotClick(slot, dragType, ClickType.PICKUP, player);
-//        }
-//        isRetrying = false;
-//    }
-//	
-//	private boolean isLastCraftingOperation(){
-//		ItemStack stack = CraftResult.getStackInSlot(0); 
-//		if (ItemStack.areItemStacksEqual(stack, ItemStack.EMPTY) && stack.getCount() >= 1 
-//           && (!stack.getItem().hasContainerItem(stack)))
-//            return true;
-//		return false;
-//	}
+	
+	@Override
+	public ItemStack slotClick(int slotId, int dragType, 
+			ClickType clickTypeIn,EntityPlayer player){
+		int getInCount = 0;
+		if(slotId == 1)
+			getInCount = inputInventory.getStackInSlot(0).getCount();
+		ItemStack clickStack = super.slotClick(slotId, dragType, clickTypeIn, player);
+		if(slotId == 1){
+			getInCount--;
+			inputInventory.getStackInSlot(0).setCount(getInCount);
+		}return clickStack;
+	}
+	
+	@Override
+    protected void retrySlotClick(int slotId, int dragType, boolean bin, EntityPlayer player) {
+		super.retrySlotClick(slotId, dragType, bin, player);
+    }
 	
 	@Override
 	public void onCraftMatrixChanged(IInventory parInventory){
@@ -208,10 +159,6 @@ public class ContainerMintTileEntity extends Container {
         }
         if(!worldObj.isRemote){
             ItemStack itemStack = inventoryItemStacks.get(0);
-            if(!ItemStack.areItemStacksEqual(ItemStack.EMPTY, itemStack)){
-                parPlayer.entityDropItem(itemStack, 0.5f);
-            }
-            itemStack = inventoryItemStacks.get(1);
             if(!ItemStack.areItemStacksEqual(ItemStack.EMPTY, itemStack)){
                 parPlayer.entityDropItem(itemStack, 0.5f);
             }

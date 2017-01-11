@@ -8,7 +8,6 @@ import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
 
 public class GuiMintTileEntity extends GuiContainer{
@@ -30,8 +29,6 @@ public class GuiMintTileEntity extends GuiContainer{
 	protected void drawGuiContainerBackgroundLayer(float f, int mousex, int mousey) {
 		GlStateManager.color(1.0f,1.0f,1.0f,1.0f);
 		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
-        int backX = sr.getScaledWidth();
-        int backY = sr.getScaledHeight();
 		this.mc.getTextureManager().bindTexture(new ResourceLocation("simplecoins:textures/gui/container/mint.png"));
 		this.drawModalRectWithCustomSizedTexture(this.guiLeft,this.guiTop,
 				0,0,xSize,ySize, xSize, ySize);
