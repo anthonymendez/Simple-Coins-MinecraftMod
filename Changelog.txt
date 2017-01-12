@@ -1,0 +1,16 @@
+0.4.0 - Coins added to mob drops.
+	Zombies, ZombiePigmen, Husks, and ZombieVillagers have a 20% chance of
+	dropping 4 iron coins, and a 10% chance of dropping 4 coins.
+	Evokers, Vindicators and Villagers all drop 0-3 iron coins and 0-3 gold
+	coins
+	Updated to Forge 13.20.0.2212
+0.3.1
+	Updated to Forge 13.20.0.2206
+0.3.0
+	Mint Block is now functionality. Can craft 1 coin from 1 nugget (Iron or Gold).
+	Recipes for coins in the crafting table has been removed. THE MINT IS NOW REQUIRED TO CRAFT COINS
+	Mint Block crafting recipe changed. Check the crafting recipes above.
+	1 Coin in the crafting table now becomes 1 nugget.
+0.2.0 - Initial Release.
+	Mint block added.
+	Iron and Gold coin added.
