@@ -16,7 +16,7 @@ public class Main {
 	
 	public static final String MODID = "simplecoins";
 	public static final String MODNAME = "Simple Coins mod";
-	public static final String VERSION = "0.3.2";
+	public static final String VERSION = "0.4.0";
 	
 	@Instance(MODID)
     public static Main instance = new Main();
