@@ -1,9 +1,7 @@
 package com.TonyTiger.simplecoins.block;
-
 import com.TonyTiger.simplecoins.Main;
 import com.TonyTiger.simplecoins.TileEntity.MintTileEntity;
 import com.TonyTiger.simplecoins.network.ModGuiHandler;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

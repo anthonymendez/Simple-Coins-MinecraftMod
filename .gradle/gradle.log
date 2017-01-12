@@ -1,29 +1,15 @@
 This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.
 
 :deobfCompileDummyTask
-:getVersionJson
-:extractUserdev UP-TO-DATE
-:downloadClient SKIPPED
-:downloadServer SKIPPED
-:splitServerJar SKIPPED
-:mergeJars SKIPPED
-:applyBinaryPatches SKIPPED
 :deobfProvidedDummyTask
-:extractDependencyATs SKIPPED
-:extractMcpData SKIPPED
-:extractMcpMappings SKIPPED
-:genSrgs SKIPPED
-:deobfMcMCP SKIPPED
 :sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava UP-TO-DATE
-:compileJava
-Download https://libraries.minecraft.net/com/mojang/realms/1.10.9/realms-1.10.9.pom
-Download https://libraries.minecraft.net/com/mojang/realms/1.10.9/realms-1.10.9.jar
-warning: [options] bootstrap class path not set in conjunction with -source 1.6
+:sourceMainJava
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
+
 :processResources
 :classes
 :jar
@@ -32,6 +18,11 @@ warning: [options] bootstrap class path not set in conjunction with -source 1.6
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
+:extractMcpData SKIPPED
+:extractMcpMappings SKIPPED
+:getVersionJson
+:extractUserdev
+:genSrgs SKIPPED
 :reobfJar
 :assemble
 :check UP-TO-DATE
@@ -39,4 +30,4 @@ warning: [options] bootstrap class path not set in conjunction with -source 1.6
 
 BUILD SUCCESSFUL
 
-Total time: 23.303 secs
+Total time: 24.14 secs
