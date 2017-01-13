@@ -16,9 +16,11 @@ This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
 :sourceMainJava
-:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+:compileJava
+Download https://libraries.minecraft.net/com/mojang/realms/1.10.10/realms-1.10.10.pom
+Download https://libraries.minecraft.net/com/mojang/realms/1.10.10/realms-1.10.10.jar
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
-
 :processResources
 :classes
 :jar
@@ -39,4 +41,4 @@ This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril
 
 BUILD SUCCESSFUL
 
-Total time: 46.244 secs
+Total time: 59.104 secs

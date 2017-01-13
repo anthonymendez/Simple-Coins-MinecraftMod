@@ -8,19 +8,26 @@ import com.TonyTiger.simplecoins.crafting.ModCrafting;
 import com.TonyTiger.simplecoins.event.EventHandlerCommon;
 import com.TonyTiger.simplecoins.items.ModItems;
 import com.TonyTiger.simplecoins.network.ModGuiHandler;
+import com.TonyTiger.simplecoins.profession.BankerProfessionAndCareer;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.VillagerRegistry;
 
 public class ClientProxy {
+	
+	public static boolean enableBanker = true; 
+	//I've had streetlight manifesto's Kristina on repeat.
+	//send help
 	public void preInit(FMLPreInitializationEvent e){
 		ModItems.createItems();
 		ModTileEntities.init();
 		ModBlocks.createBlocks();
+		if(enableBanker){
+			BankerProfessionAndCareer.initilize();
+		}
 	}
 	public void init(FMLInitializationEvent e){
 		ItemRenderRegister.registerItemRenderer();
