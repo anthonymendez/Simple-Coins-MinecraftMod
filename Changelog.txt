@@ -1,4 +1,5 @@
 0.5.2
+	Banker now named "Banker" in en_US.lang.
 	Figured out trades for 1 emerald to multiple items.
 	At Tier 1:
 		21-27 Iron Coins <-> 1 Emerald
