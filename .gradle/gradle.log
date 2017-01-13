@@ -30,7 +30,7 @@ This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril
 :extractMcpData SKIPPED
 :extractMcpMappings SKIPPED
 :getVersionJson
-:extractUserdev
+:extractUserdev UP-TO-DATE
 :genSrgs SKIPPED
 :reobfJar
 :assemble
@@ -39,4 +39,4 @@ This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril
 
 BUILD SUCCESSFUL
 
-Total time: 33.264 secs
+Total time: 46.244 secs
