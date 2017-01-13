@@ -1,3 +1,12 @@
+0.5.1
+	Emeralds cannot be converted to coins properly. This trade option has been removed for the time being.
+	That means this trade is what is left:
+	At Tier 1:
+		21-27 Iron Coins -> 1 Emerald
+		24-30 Gold Coins -> 1 Emerald
+	At Tier 2:
+		21-27 Iron Coins -> 1 Emerald
+		24-30 Gold Coins -> 1 Emerald
 0.5.0
 	Added new type of Villager: Banker.
 	Banker wears a light blue robe.

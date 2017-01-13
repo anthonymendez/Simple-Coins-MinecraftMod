@@ -6,7 +6,7 @@ gamma:1.0
 saturation:0.0
 renderDistance:2
 guiScale:0
-particles:2
+particles:0
 bobView:true
 anaglyph3d:false
 maxFps:260
