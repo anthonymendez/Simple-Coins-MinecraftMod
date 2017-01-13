@@ -26,7 +26,7 @@ public class ClientProxy {
 		ModTileEntities.init();
 		ModBlocks.createBlocks();
 		if(enableBanker){
-			BankerProfessionAndCareer.initilize();
+			BankerProfessionAndCareer.initialize();
 		}
 	}
 	public void init(FMLInitializationEvent e){

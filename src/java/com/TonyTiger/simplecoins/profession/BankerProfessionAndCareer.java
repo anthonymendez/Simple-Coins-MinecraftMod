@@ -30,7 +30,7 @@ public class BankerProfessionAndCareer {
 //			new EntityVillager.ListItemForEmeralds(new ItemStack(ModItems.GOLDCOIN,RandNum(44,56)), new PriceInfo(2,2))
 	};
 	
-	public static void initilize(){
+	public static void initialize(){
 		BankerProfessionAndCareer.bankerCar.addTrade(1, BankerProfessionAndCareer.trades);
 //		BankerProfessionAndCareer.bankerCar.addTrade(2, BankerProfessionAndCareer.tradesl2);
 		VillagerRegistry.instance().register(BankerProfessionAndCareer.bankerProf);
