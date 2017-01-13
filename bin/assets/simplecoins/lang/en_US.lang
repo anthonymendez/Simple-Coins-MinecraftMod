@@ -2,3 +2,4 @@
 item.ironcoin_Item.name=Iron Coin
 item.goldcoin_Item.name=Gold Coin
 tile.mint_block.name=Mint
+entity.Villager.simplecoins_banker_car=Banker

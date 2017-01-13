@@ -1,3 +1,13 @@
+0.5.2
+	Figured out trades for 1 emerald to multiple items.
+	At Tier 1:
+		21-27 Iron Coins <-> 1 Emerald
+		24-30 Gold Coins <-> 1 Emerald
+	At Tier 2:
+		21-27 Iron Coins -> 1 Emerald
+		24-30 Gold Coins -> 1 Emerald
+		38-50 Iron Coins <- 2 Emeralds
+		24-30 Gold Coins <- 2 Emeralds
 0.5.1
 	Emeralds cannot be converted to coins properly. This trade option has been removed for the time being.
 	That means this trade is what is left:

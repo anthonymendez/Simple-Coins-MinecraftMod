@@ -322,3 +322,48 @@
 [00:40:06] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
 [00:40:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
 [00:40:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:12:13] [main/INFO] [GradleStart]: username: anthonymendez9@gmail.com
+[17:12:13] [main/INFO] [GradleStart]: Extra: []
+[17:12:13] [main/INFO] [GradleStart]: Password found, attempting login
+[17:12:16] [main/INFO] [GradleStart]: Login Succesful!
+[17:12:16] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/AnthonyMLaptop/.gradle/caches/minecraft/assets, --assetIndex, 1.11, --userType, mojang, --accessToken{REDACTED}, --version, 1.11.2, --uuid, 662a4856593c412ea148acf5d829ef56, --username, Tony_De_Tiger, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:12:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:12:17] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:12:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:12:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:14:56] [main/INFO] [GradleStart]: username: anthonymendez9@gmail.com
+[17:14:56] [main/INFO] [GradleStart]: Extra: []
+[17:14:56] [main/INFO] [GradleStart]: Password found, attempting login
+[17:14:58] [main/INFO] [GradleStart]: Login Succesful!
+[17:14:58] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/AnthonyMLaptop/.gradle/caches/minecraft/assets, --assetIndex, 1.11, --userType, mojang, --accessToken{REDACTED}, --version, 1.11.2, --uuid, 662a4856593c412ea148acf5d829ef56, --username, Tony_De_Tiger, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:14:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:14:58] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:14:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:14:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:16:01] [main/INFO] [GradleStart]: username: anthonymendez9@gmail.com
+[17:16:01] [main/INFO] [GradleStart]: Extra: []
+[17:16:01] [main/INFO] [GradleStart]: Password found, attempting login
+[17:16:02] [main/INFO] [GradleStart]: Login Succesful!
+[17:16:03] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/AnthonyMLaptop/.gradle/caches/minecraft/assets, --assetIndex, 1.11, --userType, mojang, --accessToken{REDACTED}, --version, 1.11.2, --uuid, 662a4856593c412ea148acf5d829ef56, --username, Tony_De_Tiger, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:16:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:16:03] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:16:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:16:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:23:31] [main/INFO] [GradleStart]: username: anthonymendez9@gmail.com
+[17:23:31] [main/INFO] [GradleStart]: Extra: []
+[17:23:31] [main/INFO] [GradleStart]: Password found, attempting login
+[17:23:33] [main/INFO] [GradleStart]: Login Succesful!
+[17:23:33] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/AnthonyMLaptop/.gradle/caches/minecraft/assets, --assetIndex, 1.11, --userType, mojang, --accessToken{REDACTED}, --version, 1.11.2, --uuid, 662a4856593c412ea148acf5d829ef56, --username, Tony_De_Tiger, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:23:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:23:33] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:23:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:28:33] [main/INFO] [GradleStart]: username: anthonymendez9@gmail.com
+[17:28:33] [main/INFO] [GradleStart]: Extra: []
+[17:28:33] [main/INFO] [GradleStart]: Password found, attempting login
+[17:28:35] [main/INFO] [GradleStart]: Login Succesful!
+[17:28:35] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, C:/Users/AnthonyMLaptop/.gradle/caches/minecraft/assets, --assetIndex, 1.11, --userType, mojang, --accessToken{REDACTED}, --version, 1.11.2, --uuid, 662a4856593c412ea148acf5d829ef56, --username, Tony_De_Tiger, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:28:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:28:35] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:28:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:28:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker

@@ -2,10 +2,7 @@ package com.TonyTiger.simplecoins.profession;
 
 import com.TonyTiger.simplecoins.items.ModItems;
 
-import net.minecraft.entity.passive.EntityVillager;
-import net.minecraft.entity.passive.EntityVillager.EmeraldForItems;
-import net.minecraft.entity.passive.EntityVillager.ITradeList;
-import net.minecraft.entity.passive.EntityVillager.PriceInfo;
+import net.minecraft.entity.passive.EntityVillager.*;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.VillagerRegistry;
 import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerCareer;
@@ -18,27 +15,26 @@ public class BankerProfessionAndCareer {
 	protected static final VillagerCareer bankerCar = new VillagerCareer(bankerProf,"simplecoins_banker_car");
 	
 	public static ITradeList[] trades = {
+			// 21-27/24-30 coins for 1 emerald.
 			new EmeraldForItems(ModItems.IRONCOIN, new PriceInfo(21,27)),
 			new EmeraldForItems(ModItems.GOLDCOIN, new PriceInfo(24,30)),
-//			new EntityVillager.ListItemForEmeralds(new ItemStack(ModItems.IRONCOIN,21), new PriceInfo(1,1)),
-//			new EntityVillager.ListItemForEmeralds(new ItemStack(ModItems.GOLDCOIN,24), new PriceInfo(1,1)),
+			// 1 emerald for 21-27 coins.
+			// Price info must be negative so that forge understands that
+			// 1 emerald is being spent for multiple items.
+			// ... but not just use an ItemStack...? I dunno.
+			new ListItemForEmeralds(new ItemStack(ModItems.IRONCOIN,1), new PriceInfo(-21,-27)),
+			new ListItemForEmeralds(new ItemStack(ModItems.GOLDCOIN,1), new PriceInfo(-24,-30)),
 	};
 	public static ITradeList[] tradesl2 = {
 			new EmeraldForItems(ModItems.IRONCOIN, new PriceInfo(19,25)),
 			new EmeraldForItems(ModItems.GOLDCOIN, new PriceInfo(22,28)),
-//			new EntityVillager.ListItemForEmeralds(new ItemStack(ModItems.IRONCOIN,RandNum(38,50)), new PriceInfo(2,2)),
-//			new EntityVillager.ListItemForEmeralds(new ItemStack(ModItems.GOLDCOIN,RandNum(44,56)), new PriceInfo(2,2))
+			new ListItemForEmeralds(new ItemStack(ModItems.IRONCOIN,1), new PriceInfo(-38,-50)),
+			new ListItemForEmeralds(new ItemStack(ModItems.GOLDCOIN,1), new PriceInfo(-44,-56))
 	};
 	
 	public static void initialize(){
 		BankerProfessionAndCareer.bankerCar.addTrade(1, BankerProfessionAndCareer.trades);
-//		BankerProfessionAndCareer.bankerCar.addTrade(2, BankerProfessionAndCareer.tradesl2);
+		BankerProfessionAndCareer.bankerCar.addTrade(2, BankerProfessionAndCareer.tradesl2);
 		VillagerRegistry.instance().register(BankerProfessionAndCareer.bankerProf);
-	}
-	
-	private static int RandNum(int from, int to){
-		double rand = (to-from)*Math.random();
-		from += Math.round(rand);
-		return from;
 	}
 }
