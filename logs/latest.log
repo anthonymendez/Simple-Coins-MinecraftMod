@@ -1,11 +1,11 @@
-[23:11:39] [main/INFO]: Logging in with username & password
-[23:11:47] [Client thread/INFO]: Setting user: Tony_De_Tiger
-[23:11:56] [Client thread/WARN]: Skipping bad option: lastServer:
-[23:11:56] [Client thread/INFO]: LWJGL Version: 2.9.4
-[23:11:58] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
-// Ouch. That hurt :(
+[19:35:26] [main/INFO]: Logging in with username & password
+[19:35:39] [Client thread/INFO]: Setting user: Tony_De_Tiger
+[19:35:53] [Client thread/WARN]: Skipping bad option: lastServer:
+[19:35:53] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:35:55] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
+// I feel sad now :(
 
-Time: 1/11/17 11:11 PM
+Time: 1/12/17 7:35 PM
 Description: Loading screen debug info
 
 This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
@@ -20,80 +20,48 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_111, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 106251968 bytes (101 MB) / 333447168 bytes (318 MB) up to 928514048 bytes (885 MB)
+	Memory: 94156592 bytes (89 MB) / 332398592 bytes (317 MB) up to 928514048 bytes (885 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4358' Renderer: 'Intel(R) HD Graphics 4000'
-[23:12:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
-[23:12:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:12:27] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[23:12:27] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:12:27] [Thread-8/INFO]: OpenAL initialized.
-[23:12:28] [Sound Library Loader/INFO]: Sound engine started
-[23:12:41] [Client thread/INFO]: Created: 16x16 textures-atlas
-[23:12:46] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
-[23:12:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
-[23:12:53] [Client thread/INFO]: SoundSystem shutting down...
-[23:12:54] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[23:12:54] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:12:54] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[23:12:54] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:12:54] [Thread-10/INFO]: OpenAL initialized.
-[23:12:54] [Sound Library Loader/INFO]: Sound engine started
-[23:13:03] [Client thread/INFO]: Created: 512x512 textures-atlas
-[23:13:07] [Client thread/WARN]: Skipping bad option: lastServer:
-[23:14:09] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
-[23:14:09] [Server thread/INFO]: Generating keypair
-[23:14:10] [Server thread/INFO]: Preparing start region for level 0
-[23:14:11] [Server thread/INFO]: Preparing spawn area: 60%
-[23:14:12] [Server thread/INFO]: Changing view distance to 2, from 10
-[23:14:13] [Server thread/INFO]: Tony_De_Tiger[local:E:8f32fde9] logged in with entity id 123 at (-1498.37827690765, 4.0, 1211.9925571658766)
-[23:14:14] [Server thread/INFO]: Tony_De_Tiger joined the game
-[23:14:16] [Server thread/INFO]: Saving and pausing game...
-[23:14:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:14:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:14:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:14:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2480ms behind, skipping 49 tick(s)
-[23:14:17] [Server thread/INFO]: Saving and pausing game...
-[23:14:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:14:18] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:14:18] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:14:26] [Server thread/INFO]: Saving and pausing game...
-[23:14:26] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:14:27] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:14:27] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:14:31] [Server thread/INFO]: Saving and pausing game...
-[23:14:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:14:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:14:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:14:41] [Server thread/INFO]: [Tony_De_Tiger: Set the time to 1000]
-[23:14:42] [Client thread/INFO]: [CHAT] Set the time to 1000
-[23:15:38] [Server thread/INFO]: [Tony_De_Tiger: Set the time to 13000]
-[23:15:38] [Client thread/INFO]: [CHAT] Set the time to 13000
-[23:15:39] [Server thread/INFO]: Saving and pausing game...
-[23:15:39] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:15:39] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:15:39] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:16:00] [Server thread/INFO]: [Tony_De_Tiger: Set the time to 1000]
-[23:16:00] [Client thread/INFO]: [CHAT] Set the time to 1000
-[23:17:16] [Server thread/INFO]: Saving and pausing game...
-[23:17:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:17:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:17:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:17:28] [Server thread/INFO]: [Tony_De_Tiger: Changing to clear weather]
-[23:17:28] [Client thread/INFO]: [CHAT] Changing to clear weather
-[23:18:16] [Server thread/INFO]: Saving and pausing game...
-[23:18:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:18:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:18:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:18:16] [Client thread/INFO]: Stopping!
-[23:18:17] [Server thread/INFO]: Stopping server
-[23:18:17] [Server thread/INFO]: Saving players
-[23:18:17] [Server thread/INFO]: Saving worlds
-[23:18:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[23:18:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[23:18:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[23:18:17] [Client thread/INFO]: SoundSystem shutting down...
-[23:18:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:36:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
+[19:36:30] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:36:30] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[19:36:30] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:36:30] [Thread-8/INFO]: OpenAL initialized.
+[19:36:30] [Sound Library Loader/INFO]: Sound engine started
+[19:36:45] [Client thread/INFO]: Created: 16x16 textures-atlas
+[19:36:51] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
+[19:36:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
+[19:36:59] [Client thread/INFO]: SoundSystem shutting down...
+[19:36:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:36:59] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:36:59] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[19:36:59] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:36:59] [Thread-10/INFO]: OpenAL initialized.
+[19:37:01] [Sound Library Loader/INFO]: Sound engine started
+[19:37:13] [Client thread/INFO]: Created: 512x512 textures-atlas
+[19:37:17] [Client thread/WARN]: Skipping bad option: lastServer:
+[19:37:31] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[19:37:31] [Server thread/INFO]: Generating keypair
+[19:37:34] [Server thread/INFO]: Preparing start region for level 0
+[19:37:35] [Server thread/INFO]: Preparing spawn area: 29%
+[19:37:36] [Server thread/INFO]: Changing view distance to 2, from 10
+[19:37:39] [Server thread/INFO]: Tony_De_Tiger[local:E:45bb3b1a] logged in with entity id 63 at (-1503.6535590486437, 4.0, 1202.300000011921)
+[19:37:40] [Server thread/INFO]: Tony_De_Tiger joined the game
+[19:37:43] [Server thread/INFO]: Saving and pausing game...
+[19:37:43] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[19:37:43] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[19:37:43] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[19:37:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3007ms behind, skipping 60 tick(s)
+[19:38:16] [Client thread/INFO]: Stopping!
+[19:38:16] [Server thread/INFO]: Stopping server
+[19:38:16] [Server thread/INFO]: Saving players
+[19:38:17] [Server thread/INFO]: Saving worlds
+[19:38:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[19:38:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[19:38:17] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[19:38:17] [Client thread/INFO]: SoundSystem shutting down...
+[19:38:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

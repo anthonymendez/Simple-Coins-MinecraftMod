@@ -1,3 +1,7 @@
+0.4.2
+	3 Nuggets are required for 1 coin.
+	1 coin back crafts to 3 nuggets.
+	Fixed a crafting bug that would not waste nuggets and not give you a coin.
 0.4.0 - Coins added to mob drops.
 	Zombies, ZombiePigmen, Husks, and ZombieVillagers have a 20% chance of
 	dropping 4 iron coins, and a 10% chance of dropping 4 coins.

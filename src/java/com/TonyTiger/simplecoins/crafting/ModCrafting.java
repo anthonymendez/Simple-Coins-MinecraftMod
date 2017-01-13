@@ -18,10 +18,10 @@ public class ModCrafting {
 //			new ItemStack(ModItems.GOLDCOIN,8), new Object[]{" I", "I ", 'I',Items.GOLD_INGOT}		
 //		);
 		GameRegistry.addRecipe(
-			new ItemStack(Item.getByNameOrId("iron_nugget")), new Object[]{"I", 'I',ModItems.IRONCOIN}
+			new ItemStack(Item.getByNameOrId("iron_nugget"),3), new Object[]{"I", 'I',ModItems.IRONCOIN}
 		);
 		GameRegistry.addRecipe(
-			new ItemStack(Items.GOLD_NUGGET), new Object[]{"I", 'I',ModItems.GOLDCOIN}		
+			new ItemStack(Items.GOLD_NUGGET,3), new Object[]{"I", 'I',ModItems.GOLDCOIN}		
 		);
 		GameRegistry.addRecipe(
 			new ItemStack(ModBlocks.mint), new Object[]{"SPS","S S","SSS", 'S',Blocks.STONE,
