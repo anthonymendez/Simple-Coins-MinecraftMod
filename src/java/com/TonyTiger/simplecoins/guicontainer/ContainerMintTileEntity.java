@@ -87,16 +87,19 @@ public class ContainerMintTileEntity extends Container {
             //if the slot is the output
             else if(slot.inventory.equals(CraftResult)){
             	int inputAmount = inputInventory.getStackInSlot(0).getCount();
-//            	for(int i = 0; i < inputAmount; i++){
-            		ItemStack is = slot.getStack();
-            		is.setCount(inputAmount);
-            		if (!playerIn.inventory.addItemStackToInventory(is)){
-                        return ItemStack.EMPTY;
-                    }
-            		inputInventory.setInventorySlotContents(0, ItemStack.EMPTY);;
-//            	}
+            	int remain = inputAmount%3;
+            	ItemStack is = slot.getStack();
+            	is.setCount(inputAmount/3);
+            	if (!playerIn.inventory.addItemStackToInventory(is)){
+            		return ItemStack.EMPTY;
+                }
+            	is = inputInventory.getStackInSlot(0);
+            	is.setCount(remain);
+            	inputInventory.setInventorySlotContents(0,is);;
+            	this.inventorySlots.get(0).putStack(is);;
+            	this.inventorySlots.get(0).onSlotChanged();;
             	slot.putStack(ItemStack.EMPTY);
-                slot.onSlotChanged();
+            	slot.onSlotChanged();
             }
             // if the slot is a player inventory slot
             else if(slot.inventory.equals(playerIn.inventory))
@@ -124,28 +127,46 @@ public class ContainerMintTileEntity extends Container {
 	public ItemStack slotClick(int slotId, int dragType, 
 			ClickType clickTypeIn,EntityPlayer player){
 		int getInCount = 0;
-		if(slotId == 1)
+		int getOutCount = 0;
+		int getHandCount = 0;
+		if(slotId == 1 && !CraftResult.getStackInSlot(0).isEmpty()
+			&& !clickTypeIn.equals(ClickType.QUICK_MOVE)){
 			getInCount = inputInventory.getStackInSlot(0).getCount();
+			getOutCount = CraftResult.getStackInSlot(0).getCount();
+			getHandCount = player.inventory.getItemStack().getCount();
+		}
 		ItemStack clickStack = super.slotClick(slotId, dragType, clickTypeIn, player);
-		if(slotId == 1){
-			getInCount--;
+		if(slotId == 1 && !clickTypeIn.equals(ClickType.QUICK_MOVE)){
+			getInCount -= 3;
+			getOutCount -= 1;
+			getHandCount += 1;			
 			inputInventory.getStackInSlot(0).setCount(getInCount);
-		}return clickStack;
+			CraftResult.getStackInSlot(0).setCount(getOutCount);
+			player.inventory.getItemStack().setCount(getHandCount);
+		}
+		onCraftMatrixChanged(inputInventory);
+		return clickStack;
 	}
 	
 	@Override
     protected void retrySlotClick(int slotId, int dragType, boolean bin, EntityPlayer player) {
-		super.retrySlotClick(slotId, dragType, bin, player);
+		if(slotId == 1){
+			this.slotClick(slotId, dragType, ClickType.PICKUP, player);
+		}
+		else
+			super.retrySlotClick(slotId, dragType, bin, player);
     }
 	
 	@Override
 	public void onCraftMatrixChanged(IInventory parInventory){
 		if(inputInventory != null){
 			ItemStack in = inputInventory.getStackInSlot(0);
-			if(in.isItemEqual(new ItemStack(Items.GOLD_NUGGET,1))){
-				CraftResult.setInventorySlotContents(0, new ItemStack(ModItems.GOLDCOIN,1));
-			}else if(in.isItemEqual(new ItemStack(Item.getByNameOrId("iron_nugget"),1))){
-				CraftResult.setInventorySlotContents(0, new ItemStack(ModItems.IRONCOIN,1));
+			ItemStack ironOut = new ItemStack(ModItems.IRONCOIN,1);
+			ItemStack goldOut = new ItemStack(ModItems.GOLDCOIN,1);
+			if(in.isItemEqual(new ItemStack(Items.GOLD_NUGGET,1)) && in.getCount() >= 3){
+				CraftResult.setInventorySlotContents(0, goldOut);
+			}else if(in.isItemEqual(new ItemStack(Item.getByNameOrId("iron_nugget"),1)) && in.getCount() >= 3){
+				CraftResult.setInventorySlotContents(0, ironOut);
 			}else if(in.isEmpty())
 				CraftResult.setInventorySlotContents(0, ItemStack.EMPTY);
 		}
