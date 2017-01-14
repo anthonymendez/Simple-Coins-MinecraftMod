@@ -25,6 +25,9 @@ public class ContainerMintTileEntity extends Container {
 	private InventoryCrafting inputInventory = new InventoryCrafting(this,1,1);
 	protected World worldObj;
 	protected BlockPos pos;
+	
+	public static int numNuggetsNeedForCraft = 3,numCoinsCrafted = 1;
+	
 	/*
 	 * SLOTS:
 	 * 
@@ -87,9 +90,9 @@ public class ContainerMintTileEntity extends Container {
             //if the slot is the output
             else if(slot.inventory.equals(CraftResult)){
             	int inputAmount = inputInventory.getStackInSlot(0).getCount();
-            	int remain = inputAmount%3;
+            	int remain = inputAmount%numNuggetsNeedForCraft;
             	ItemStack is = slot.getStack();
-            	is.setCount(inputAmount/3);
+            	is.setCount(inputAmount/numNuggetsNeedForCraft);
             	if (!playerIn.inventory.addItemStackToInventory(is)){
             		return ItemStack.EMPTY;
                 }
@@ -137,9 +140,9 @@ public class ContainerMintTileEntity extends Container {
 		}
 		ItemStack clickStack = super.slotClick(slotId, dragType, clickTypeIn, player);
 		if(slotId == 1 && !clickTypeIn.equals(ClickType.QUICK_MOVE)){
-			getInCount -= 3;
-			getOutCount -= 1;
-			getHandCount += 1;			
+			getInCount -= numNuggetsNeedForCraft;
+			getOutCount -= numCoinsCrafted;
+			getHandCount += numCoinsCrafted;			
 			inputInventory.getStackInSlot(0).setCount(getInCount);
 			CraftResult.getStackInSlot(0).setCount(getOutCount);
 			player.inventory.getItemStack().setCount(getHandCount);

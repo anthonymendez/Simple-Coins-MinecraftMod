@@ -1,6 +1,7 @@
 package com.TonyTiger.simplecoins.crafting;
 
 import com.TonyTiger.simplecoins.block.ModBlocks;
+import com.TonyTiger.simplecoins.guicontainer.ContainerMintTileEntity;
 import com.TonyTiger.simplecoins.items.ModItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -18,10 +19,10 @@ public class ModCrafting {
 //			new ItemStack(ModItems.GOLDCOIN,8), new Object[]{" I", "I ", 'I',Items.GOLD_INGOT}		
 //		);
 		GameRegistry.addRecipe(
-			new ItemStack(Item.getByNameOrId("iron_nugget"),3), new Object[]{"I", 'I',ModItems.IRONCOIN}
+			new ItemStack(Item.getByNameOrId("iron_nugget"),ContainerMintTileEntity.numNuggetsNeedForCraft), new Object[]{"I", 'I',new ItemStack(ModItems.IRONCOIN,ContainerMintTileEntity.numCoinsCrafted)}
 		);
 		GameRegistry.addRecipe(
-			new ItemStack(Items.GOLD_NUGGET,3), new Object[]{"I", 'I',ModItems.GOLDCOIN}		
+			new ItemStack(Items.GOLD_NUGGET,ContainerMintTileEntity.numNuggetsNeedForCraft), new Object[]{"I", 'I',new ItemStack(ModItems.GOLDCOIN,ContainerMintTileEntity.numCoinsCrafted)}		
 		);
 		GameRegistry.addRecipe(
 			new ItemStack(ModBlocks.mint), new Object[]{"SPS","S S","SSS", 'S',Blocks.STONE,

@@ -1,5 +1,6 @@
 package com.TonyTiger.simplecoins;
 
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -8,7 +9,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
+@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION,
+	 guiFactory = "com.TonyTiger.simplecoins.config.GuiFactory")
 
 public class Main {
 	@SidedProxy(clientSide="com.TonyTiger.simplecoins.ClientProxy",serverSide="com.TonyTiger.simplecoins.ServerProxy")
@@ -16,7 +18,7 @@ public class Main {
 	
 	public static final String MODID = "simplecoins";
 	public static final String MODNAME = "Simple Coins mod";
-	public static final String VERSION = "0.5.2";
+	public static final String VERSION = "0.6.0";
 	
 	@Instance(MODID)
     public static Main instance = new Main();

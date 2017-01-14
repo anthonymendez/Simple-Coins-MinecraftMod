@@ -3,3 +3,7 @@ item.ironcoin_Item.name=Iron Coin
 item.goldcoin_Item.name=Gold Coin
 tile.mint_block.name=Mint
 entity.Villager.simplecoins_banker_car=Banker
+com.TonyTiger.simplecoins.configV.tooltip=Enable/Disable additional types of Villagers.
+com.TonyTiger.simplecoins.configT.tooltip=Change different trading settings like the tiers, the amount of items traded, etc.
+com.TonyTiger.simplecoins.configC.tooltip=Change the crafting amounts in the Mint.
+com.TonyTiger.simplecoins.configMD.tooltip=Enable/Disable and change the amount dropped on different mobs.

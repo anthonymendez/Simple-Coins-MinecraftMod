@@ -1,3 +1,12 @@
+0.6.0
+	Added a Configuration menu.
+		Enable/Disable Banker Villager.
+		Enable/Disable Tier 1 and 2 Trades.
+		Set the min/max for #Coins <-> 1 Emerald for Tier 1 and 2.
+		Can change crafting amount for a coin and how many coins are produced.
+		Set drop rates for coins on mobs.
+		Set min/max amount of coins that mobs can drop.
+		Enable/Disable chance of drops for some mobs.
 0.5.2
 	Banker now named "Banker" in en_US.lang.
 	Figured out trades for 1 emerald to multiple items.
