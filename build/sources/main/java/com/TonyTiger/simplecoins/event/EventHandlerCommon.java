@@ -2,6 +2,7 @@ package com.TonyTiger.simplecoins.event;
 
 import com.TonyTiger.simplecoins.config.ConfigHandler;
 import com.TonyTiger.simplecoins.items.ModItems;
+import com.TonyTiger.simplecoins.world.genCoinsInWorld;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityEvoker;
@@ -11,6 +12,7 @@ import net.minecraft.entity.monster.EntityVindicator;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.monster.EntityZombieVillager;
 import net.minecraft.entity.passive.EntityVillager;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -53,4 +55,9 @@ public class EventHandlerCommon {
 	    if(eventArgs.getModID().equals("simplecoins"))
 	      ConfigHandler.syncConfig();
 	  }
+	
+	@SubscribeEvent
+	public void lootLoad(LootTableLoadEvent event){
+		genCoinsInWorld.lootLoad(event);
+	}
 }

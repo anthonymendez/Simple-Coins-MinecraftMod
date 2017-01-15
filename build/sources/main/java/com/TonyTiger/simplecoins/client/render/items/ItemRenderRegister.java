@@ -1,10 +1,7 @@
 package com.TonyTiger.simplecoins.client.render.items;
 
 import com.TonyTiger.simplecoins.Main;
-import com.TonyTiger.simplecoins.block.ModBlocks;
 import com.TonyTiger.simplecoins.items.ModItems;
-
-import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

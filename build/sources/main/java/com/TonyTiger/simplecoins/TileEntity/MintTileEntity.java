@@ -1,10 +1,6 @@
 package com.TonyTiger.simplecoins.TileEntity;
 
-import com.TonyTiger.simplecoins.items.ModItems;
-
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

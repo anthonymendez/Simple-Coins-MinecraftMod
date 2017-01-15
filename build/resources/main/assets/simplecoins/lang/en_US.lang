@@ -7,3 +7,4 @@ com.TonyTiger.simplecoins.configV.tooltip=Enable/Disable additional types of Vil
 com.TonyTiger.simplecoins.configT.tooltip=Change different trading settings like the tiers, the amount of items traded, etc.
 com.TonyTiger.simplecoins.configC.tooltip=Change the crafting amounts in the Mint.
 com.TonyTiger.simplecoins.configMD.tooltip=Enable/Disable and change the amount dropped on different mobs.
+com.TonyTiger.simplecoins.configWG.tooltip=Change the rates and amount of coins spawning in the world.

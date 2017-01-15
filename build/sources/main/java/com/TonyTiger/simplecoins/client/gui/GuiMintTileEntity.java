@@ -3,8 +3,6 @@ package com.TonyTiger.simplecoins.client.gui;
 import com.TonyTiger.simplecoins.TileEntity.MintTileEntity;
 import com.TonyTiger.simplecoins.guicontainer.ContainerMintTileEntity;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -25,10 +23,10 @@ public class GuiMintTileEntity extends GuiContainer{
 		this.xSize = (int)(352/decreaseBy);
 		this.ySize = (int)(232/decreaseBy);
 	}
+	@SuppressWarnings("static-access")
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int mousex, int mousey) {
 		GlStateManager.color(1.0f,1.0f,1.0f,1.0f);
-		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 		this.mc.getTextureManager().bindTexture(new ResourceLocation("simplecoins:textures/gui/container/mint.png"));
 		this.drawModalRectWithCustomSizedTexture(this.guiLeft,this.guiTop,
 				0,0,xSize,ySize, xSize, ySize);
