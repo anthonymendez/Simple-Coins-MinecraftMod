@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MBPFile>
+  <Info
+    Version="2" />
+  <Settings
+    Columns="8"
+    Layers="10"
+    Rows="8"
+    Ground="grass" />
+  <Blocks>
+    <Block
+      X="6"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="4"
+      Y="2"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="1"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;crafting_table&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="1"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;bookshelf&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;wooden_door&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;upper&quot;},{&quot;Item1&quot;:&quot;hinge&quot;,&quot;Item2&quot;:&quot;right&quot;},{&quot;Item1&quot;:&quot;open&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="2"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="2"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="3"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;south&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="5"
+      Y="2"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="2"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="2"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;glowstone&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="3"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="2"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="3"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="3"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="3"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="3"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="3"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="3"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;north&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="3"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="1"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;crafting_table&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="3"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;torch&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;}]}" />
+    <Block
+      X="2"
+      Y="3"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;torch&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;}]}" />
+    <Block
+      X="4"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;south&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;glowstone&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="2"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="2"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="6"
+      Y="1"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;chest&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;north&quot;}]}" />
+    <Block
+      X="5"
+      Y="1"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;bookshelf&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;north&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;outer_right&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;outer_right&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="3"
+      Y="4"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="3"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;south&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="3"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;north&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="6"
+      Y="3"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="3"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="3"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="0"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="0"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="0"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="0"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;south&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;outer_right&quot;}]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="7"
+      Y="4"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;west&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;outer_right&quot;}]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="4"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="6"
+      Y="4"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_stairs&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;north&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;bottom&quot;},{&quot;Item1&quot;:&quot;shape&quot;,&quot;Item2&quot;:&quot;straight&quot;}]}" />
+    <Block
+      X="5"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="1"
+      Y="1"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="1"
+      Y="1"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="4"
+      Y="4"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;glass&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="5"
+      StateInfo="{&quot;StateID&quot;:&quot;wooden_door&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;facing&quot;,&quot;Item2&quot;:&quot;east&quot;},{&quot;Item1&quot;:&quot;half&quot;,&quot;Item2&quot;:&quot;lower&quot;},{&quot;Item1&quot;:&quot;hinge&quot;,&quot;Item2&quot;:&quot;right&quot;},{&quot;Item1&quot;:&quot;open&quot;,&quot;Item2&quot;:&quot;false&quot;}]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="4"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="1"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="3"
+      Y="1"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="3"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="2"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="0"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;oak_planks&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="5"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="7"
+      Y="2"
+      Z="6"
+      StateInfo="{&quot;StateID&quot;:&quot;brick_block&quot;,&quot;Case&quot;:[]}" />
+    <Block
+      X="2"
+      Y="1"
+      Z="7"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;true&quot;}]}" />
+    <Block
+      X="2"
+      Y="1"
+      Z="0"
+      StateInfo="{&quot;StateID&quot;:&quot;iron_bars&quot;,&quot;Case&quot;:[{&quot;Item1&quot;:&quot;north&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;east&quot;,&quot;Item2&quot;:&quot;true&quot;},{&quot;Item1&quot;:&quot;south&quot;,&quot;Item2&quot;:&quot;false&quot;},{&quot;Item1&quot;:&quot;west&quot;,&quot;Item2&quot;:&quot;true&quot;}]}" />
+  </Blocks>
+</MBPFile>

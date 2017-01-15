@@ -1,3 +1,5 @@
+1.0.0
+	Bankers now have their own house. As such, they can now natively spawn in villages.
 0.7.0
 	Coins now generate in loot chests.
 		0-5 iron and gold coins can generate in all types randomly generated tests (including the starter chest).

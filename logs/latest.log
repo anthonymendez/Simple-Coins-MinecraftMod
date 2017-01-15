@@ -1,11 +1,11 @@
-[21:58:37] [main/INFO]: Logging in with username & password
-[21:58:45] [Client thread/INFO]: Setting user: Tony_De_Tiger
-[21:58:53] [Client thread/WARN]: Skipping bad option: lastServer:
-[21:58:53] [Client thread/INFO]: LWJGL Version: 2.9.4
-[21:58:56] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
-// I'm sorry, Dave.
+[18:38:55] [main/INFO]: Logging in with username & password
+[18:39:02] [Client thread/INFO]: Setting user: Tony_De_Tiger
+[18:39:11] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:39:11] [Client thread/INFO]: LWJGL Version: 2.9.4
+[18:39:13] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
 
-Time: 1/14/17 9:58 PM
+Time: 1/15/17 6:39 PM
 Description: Loading screen debug info
 
 This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
@@ -20,34 +20,69 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_111, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 222703272 bytes (212 MB) / 417333248 bytes (398 MB) up to 928514048 bytes (885 MB)
+	Memory: 81801768 bytes (78 MB) / 335020032 bytes (319 MB) up to 928514048 bytes (885 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4358' Renderer: 'Intel(R) HD Graphics 4000'
-[21:59:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
-[21:59:07] [Client thread/WARN]: PriceRange(-21, -27) invalid, -27 smaller than -21
-[21:59:07] [Client thread/WARN]: PriceRange(-24, -30) invalid, -30 smaller than -24
-[21:59:07] [Client thread/WARN]: PriceRange(-38, -50) invalid, -50 smaller than -38
-[21:59:07] [Client thread/WARN]: PriceRange(-44, -56) invalid, -56 smaller than -44
-[21:59:21] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:59:21] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[21:59:21] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:59:21] [Thread-8/INFO]: OpenAL initialized.
-[21:59:22] [Sound Library Loader/INFO]: Sound engine started
-[21:59:34] [Client thread/INFO]: Created: 16x16 textures-atlas
-[21:59:40] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
-[21:59:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
-[21:59:48] [Client thread/INFO]: SoundSystem shutting down...
-[21:59:48] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[21:59:48] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:59:48] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[21:59:48] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:59:48] [Thread-10/INFO]: OpenAL initialized.
-[21:59:48] [Sound Library Loader/INFO]: Sound engine started
-[21:59:58] [Client thread/INFO]: Created: 512x512 textures-atlas
-[22:00:03] [Client thread/WARN]: Skipping bad option: lastServer:
-[22:00:20] [Client thread/INFO]: Stopping!
-[22:00:20] [Client thread/INFO]: SoundSystem shutting down...
-[22:00:20] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:39:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
+[18:39:26] [Client thread/WARN]: PriceRange(-21, -27) invalid, -27 smaller than -21
+[18:39:26] [Client thread/WARN]: PriceRange(-24, -30) invalid, -30 smaller than -24
+[18:39:26] [Client thread/WARN]: PriceRange(-38, -50) invalid, -50 smaller than -38
+[18:39:26] [Client thread/WARN]: PriceRange(-44, -56) invalid, -56 smaller than -44
+[18:39:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:39:42] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:39:42] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:39:42] [Thread-8/INFO]: OpenAL initialized.
+[18:39:42] [Sound Library Loader/INFO]: Sound engine started
+[18:39:55] [Client thread/INFO]: Created: 16x16 textures-atlas
+[18:40:01] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
+[18:40:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Simple Coins, FMLFileResourcePack:Example Mod
+[18:40:09] [Client thread/INFO]: SoundSystem shutting down...
+[18:40:09] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:40:09] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:40:10] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[18:40:10] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:40:10] [Thread-10/INFO]: OpenAL initialized.
+[18:40:10] [Sound Library Loader/INFO]: Sound engine started
+[18:40:20] [Client thread/INFO]: Created: 512x512 textures-atlas
+[18:40:22] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:40:37] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[18:40:37] [Server thread/INFO]: Generating keypair
+[18:40:39] [Server thread/INFO]: Preparing start region for level 0
+[18:40:40] [Server thread/INFO]: Preparing spawn area: 45%
+[18:40:41] [Server thread/INFO]: Preparing spawn area: 65%
+[18:40:42] [Server thread/INFO]: Changing view distance to 7, from 10
+[18:40:44] [Server thread/INFO]: Tony_De_Tiger[local:E:395f2560] logged in with entity id 26 at (131.5, 4.0, -492.5)
+[18:40:44] [Server thread/INFO]: Tony_De_Tiger joined the game
+[18:40:46] [Server thread/INFO]: Saving and pausing game...
+[18:40:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Overworld
+[18:40:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Nether
+[18:40:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/The End
+[18:40:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4022ms behind, skipping 80 tick(s)
+[18:40:59] [Server thread/INFO]: Saving and pausing game...
+[18:40:59] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Overworld
+[18:40:59] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Nether
+[18:40:59] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/The End
+[18:41:13] [Server thread/INFO]: [Tony_De_Tiger: Set the time to 13000]
+[18:41:13] [Client thread/INFO]: [CHAT] Set the time to 13000
+[18:41:26] [Server thread/INFO]: [Tony_De_Tiger: Set the time to 1000]
+[18:41:26] [Client thread/INFO]: [CHAT] Set the time to 1000
+[18:41:30] [Client thread/INFO]: [CHAT] Saved screenshot as 2017-01-15_18.41.29.png
+[18:41:35] [Server thread/INFO]: Tony_De_Tiger has just earned the achievement [Taking Inventory]
+[18:41:35] [Client thread/INFO]: [CHAT] Tony_De_Tiger has just earned the achievement [Taking Inventory]
+[18:41:44] [Client thread/INFO]: [CHAT] Saved screenshot as 2017-01-15_18.41.44.png
+[18:41:46] [Server thread/INFO]: Saving and pausing game...
+[18:41:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Overworld
+[18:41:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Nether
+[18:41:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/The End
+[18:41:47] [Client thread/INFO]: Stopping!
+[18:41:47] [Server thread/INFO]: Stopping server
+[18:41:47] [Server thread/INFO]: Saving players
+[18:41:47] [Server thread/INFO]: Saving worlds
+[18:41:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Overworld
+[18:41:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Nether
+[18:41:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/The End
+[18:41:47] [Client thread/INFO]: SoundSystem shutting down...
+[18:41:48] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

@@ -2,8 +2,12 @@ package com.TonyTiger.simplecoins.profession;
 
 import com.TonyTiger.simplecoins.items.ModItems;
 
-import net.minecraft.entity.passive.EntityVillager.*;
+import net.minecraft.entity.passive.EntityVillager.EmeraldForItems;
+import net.minecraft.entity.passive.EntityVillager.ITradeList;
+import net.minecraft.entity.passive.EntityVillager.ListItemForEmeralds;
+import net.minecraft.entity.passive.EntityVillager.PriceInfo;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.fml.common.registry.VillagerRegistry;
 import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerCareer;
 import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession;
@@ -43,5 +47,8 @@ public class BankerProfessionAndCareer {
 		if(enableTier2trades)
 			BankerProfessionAndCareer.bankerCar.addTrade(2, BankerProfessionAndCareer.tradesl2);
 		VillagerRegistry.instance().register(BankerProfessionAndCareer.bankerProf);
+		MapGenStructureIO.registerStructureComponent(Bank.class, "ViB");
+		BankVillageHandler bvh = new BankVillageHandler();
+		VillagerRegistry.instance().registerVillageCreationHandler(bvh);
 	}
 }

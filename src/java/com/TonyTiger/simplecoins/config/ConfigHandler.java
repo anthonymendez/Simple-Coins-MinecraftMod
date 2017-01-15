@@ -5,6 +5,7 @@ import java.io.File;
 import com.TonyTiger.simplecoins.ClientProxy;
 import com.TonyTiger.simplecoins.event.EventHandlerCommon;
 import com.TonyTiger.simplecoins.guicontainer.ContainerMintTileEntity;
+import com.TonyTiger.simplecoins.profession.BankVillageHandler;
 import com.TonyTiger.simplecoins.profession.BankerProfessionAndCareer;
 import com.TonyTiger.simplecoins.world.genCoinsInWorld;
 
@@ -23,8 +24,9 @@ public class ConfigHandler {
 		String category = "";
 		
 		category = "Villagers";
-		configMain.addCustomCategoryComment(category, "Villager Settings");
-		ClientProxy.enableBanker = configMain.getBoolean("Enable Banker", category, true, "Villager that allows trading to and from emeralds with coins.");
+		configMain.addCustomCategoryComment(category, "Village Settings");
+		ClientProxy.enableBanker = configMain.getBoolean("Enable Banker", category, true, "Villager that allows trading to and from emeralds with coins. Comes with it's own building.");
+		BankVillageHandler.limit = configMain.getInt("Max amount of Banks in a Village", category, 1, 0, 10, "Adjust the amount of banks that can spawn in a village.");
 		
 		category = "Trading";
 		configMain.addCustomCategoryComment(category, "Trading Settings");
@@ -73,7 +75,6 @@ public class ConfigHandler {
 		genCoinsInWorld.maxIronGen = configMain.getInt("Maximum amount of Ironcoins that can appear in chests.", category, 5, 0, 64, "");
 		genCoinsInWorld.minGoldGen = configMain.getInt("Minimum amount of Goldcoins that can appear in chests.", category, 0, 0, 64, "");
 		genCoinsInWorld.maxGoldGen = configMain.getInt("Maximum amount of Goldcoins that can appear in chests.", category, 5, 0, 64, "");
-		
 		
 	}
 }
