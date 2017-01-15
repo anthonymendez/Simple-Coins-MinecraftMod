@@ -2,7 +2,7 @@
   "modid": "simplecoins",
   "name": "Simple Coins",
   "description": "Creates a simple currency to enhance the 'Vanilla' trading experience.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "mcversion": "1.11.2",
   "logoFile": "assets/simplecoins/textures/logo.png",
   "url": "http://www.minecraftforge.net/forum/index.php?topic=44559.",
