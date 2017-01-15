@@ -1,3 +1,7 @@
+0.7.0
+	Coins now generate in loot chests.
+		0-5 iron and gold coins can generate in all types randomly generated tests (including the starter chest).
+	Added a new Configuration Category: World Generation. Set the values for coins generating across the world.
 0.6.0
 	Added a Configuration menu.
 		Enable/Disable Banker Villager.

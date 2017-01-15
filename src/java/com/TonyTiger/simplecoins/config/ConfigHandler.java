@@ -6,6 +6,7 @@ import com.TonyTiger.simplecoins.ClientProxy;
 import com.TonyTiger.simplecoins.event.EventHandlerCommon;
 import com.TonyTiger.simplecoins.guicontainer.ContainerMintTileEntity;
 import com.TonyTiger.simplecoins.profession.BankerProfessionAndCareer;
+import com.TonyTiger.simplecoins.world.genCoinsInWorld;
 
 import net.minecraftforge.common.config.Configuration;
 
@@ -62,7 +63,17 @@ public class ConfigHandler {
 		if(EventHandlerCommon.goldcoinMaxDropAmt < EventHandlerCommon.goldcoinMinDropAmt)
 			EventHandlerCommon.goldcoinMaxDropAmt = EventHandlerCommon.goldcoinMinDropAmt;
 		if(EventHandlerCommon.ironcoinMaxDropAmt < EventHandlerCommon.ironcoinMinDropAmt)
-			EventHandlerCommon.ironcoinMaxDropAmt = EventHandlerCommon.ironcoinMinDropAmt;	
+			EventHandlerCommon.ironcoinMaxDropAmt = EventHandlerCommon.ironcoinMinDropAmt;
+		
+		category = "World Generation";
+		configMain.addCustomCategoryComment(category, "World Generation Settings");
+		genCoinsInWorld.goldChance = configMain.getInt("% Chance of Goldcoins appearing in chests", category, 5, 0, 100, "");
+		genCoinsInWorld.ironChance = configMain.getInt("% Chance of Ironcoins appearing in chests", category, 5, 0, 100, "");
+		genCoinsInWorld.minIronGen = configMain.getInt("Minimum amount of Ironcoins that can appear in chests.", category, 0, 0, 64, "");
+		genCoinsInWorld.maxIronGen = configMain.getInt("Maximum amount of Ironcoins that can appear in chests.", category, 5, 0, 64, "");
+		genCoinsInWorld.minGoldGen = configMain.getInt("Minimum amount of Goldcoins that can appear in chests.", category, 0, 0, 64, "");
+		genCoinsInWorld.maxGoldGen = configMain.getInt("Maximum amount of Goldcoins that can appear in chests.", category, 5, 0, 64, "");
+		
 		
 	}
 }
