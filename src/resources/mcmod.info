@@ -1,12 +1,12 @@
 [{
   "modid": "simplecoins",
   "name": "Simple Coins",
-  "description": "Creates a simple currency to enhance the 'Vanilla' trading experience.",
+  "description": "Expands the trading experience with two coins, a mint, and a new villager",
   "version": "1.0.0",
   "mcversion": "1.11.2",
   "logoFile": "assets/simplecoins/textures/logo.png",
   "url": "http://www.minecraftforge.net/forum/index.php?topic=44559.",
   "updateJSON": "minecraftforge.net/versions.json",
   "authorList": ["Tony The Tiger / Anthony"],
-  "credits": "Modmakers who put their code on GitHub, you guys are real OGs."
+  "credits": "Modmakers who put their code on GitHub. Thanks to some of the people on the Minecraft Forge forum for helping solve some coding issues."
 }]

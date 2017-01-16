@@ -3,6 +3,8 @@ package com.TonyTiger.simplecoins.profession;
 import java.util.List;
 import java.util.Random;
 
+import com.TonyTiger.simplecoins.block.ModBlocks;
+
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -55,6 +57,7 @@ public class Bank extends StructureVillagePieces.Village{
 			glow = Blocks.GLOWSTONE.getDefaultState(), bar = Blocks.IRON_BARS.getDefaultState(),
 			table = Blocks.CRAFTING_TABLE.getDefaultState(),
 			book = Blocks.BOOKSHELF.getDefaultState(),
+			mint = ModBlocks.mint.getDefaultState(),
 			BstairsE = this.getBiomeSpecificBlockState(Blocks.BRICK_STAIRS.getDefaultState().withProperty(BlockStairs.FACING, EnumFacing.EAST)),
 			BstairsN = this.getBiomeSpecificBlockState(Blocks.BRICK_STAIRS.getDefaultState().withProperty(BlockStairs.FACING, EnumFacing.NORTH)),
 			BstairsW = this.getBiomeSpecificBlockState(Blocks.BRICK_STAIRS.getDefaultState().withProperty(BlockStairs.FACING, EnumFacing.WEST)),
@@ -101,7 +104,7 @@ public class Bank extends StructureVillagePieces.Village{
 		this.fillWithBlocks(worldIn, structureBoundingBoxIn, 2, 1, 5, 2, 1, 5, table, table, false);
 		this.fillWithBlocks(worldIn, structureBoundingBoxIn, 7, 1, 5, 7, 1, 5, table, table, false);
 		this.fillWithBlocks(worldIn, structureBoundingBoxIn, 7, 1, 6, 7, 1, 7, book, book, false);
-		this.generateChest(worldIn, structureBoundingBoxIn, new Random(), 2, 1, 7, null);
+		this.fillWithBlocks(worldIn, structureBoundingBoxIn, 2, 1, 7, 2, 1, 7, mint, mint, false);
 		
 		for (int k = 0; k < 10; ++k)
         {
